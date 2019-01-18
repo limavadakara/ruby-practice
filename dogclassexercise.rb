@@ -6,7 +6,11 @@ class Dog
   def growl
     "Grrrrrrrr"
   end
+  def colour=(colour)
+    @colour = colour
+  end
 end
 fido = Dog.new
 puts fido.bark
 puts fido.growl
+puts fido.colour = "brown"
