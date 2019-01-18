@@ -1,5 +1,8 @@
 class Dog
 #The class can be declared with Dog = Class.new as Class is a class in Ruby
+  def initialize
+    puts "I am initialising a dog"
+    end
   def bark
     "Woof"
   end
@@ -8,6 +11,9 @@ class Dog
   end
   def walk
     puts "I am walking on #{@legs} legs"
+  end
+  def observe
+    puts "You see a #{@colour} dog"
   end
   def colour=(colour)
     @colour = colour
@@ -23,6 +29,7 @@ fido = Dog.new
 puts fido.bark
 puts fido.growl
 puts fido.colour = "brown"
+fido.observe
 fido.legs = 2
 fido.walk
 fido.add_leg
